@@ -9,7 +9,11 @@ body {
         padding: 0;
       }
       
-      h1 {
+h2{
+       text-align: center;
+        font-size: 100px;
+}
+    /*  h1 {
         color: #FFF;
         font-size: 2em;
         padding-top: 100px;
@@ -83,4 +87,5 @@ body {
         float: left;
         width: 50px;
       }
+*/
       
