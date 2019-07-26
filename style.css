@@ -90,7 +90,7 @@ header #logo img {
 #header-image {
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(0%);
-	background-image: url(pictures/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+	background-image: url(projects/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
