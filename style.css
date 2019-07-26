@@ -1,126 +1,110 @@
-body {
-  background-color: white;
-  font-family: 'Raleway', sans-serif;
+#light {
+	background-color: #eaeaeb;
 }
 
-.navigation ul {
-  margin: 0;
-  padding: 0;
-  text-align: center;
+#light #logo {
+	filter: invert(100%);
 }
 
-.navigation li {
-  font-weight: 100;
-  letter-spacing: 2px;
-  padding: 20px;
+header h1 {
+	font-size: 40px;
 }
 
-.navigation  li:hover {
-  color: black;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 4px;
+header h1,
+h2, p{
+	font-family: julius sans one;
+    letter-spacing: 3px;
+    color: #ffffff;
 }
 
-#banner {
-  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
-  background-size: cover;
-  background-position: bottom center;
-  height: 700px;
-  width: 100%;
+header {
+	height: 100vh;
+	position: relative;
+	/* background-color: #282c34; */
+	margin: 0 1vmax;
 }
 
-#banner .content h1 {
-  border: 3px solid white;
-  position: relative;
-  top: 50px;
-  width: 400px;
-  margin: 0 auto;
-  border-radius: 10px;
-  padding: 20px;
+header:hover {
+	/* Start the shake animation and make the animation last for 0.5 seconds */
+	animation: shake 0.5s;
+
+	/* When the animation is finished, start again */
+	animation-iteration-count: 0.3;
 }
 
-#main {
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
-  width: 400px;
-  overflow: unset;
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
 }
 
-.navigation ul a{
-  text-decoration: none;
-  color: #000;
+header #logo {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 5;
+	display: flex;
+	width: 50vw;
+	height: 10vmin;
+	justify-content: space-evenly;
+	align-items: center;
+	filter: invert(100%);
 }
 
-h1 {
-  color: white;
-  font-size: 42px;
-  font-weight: 600;
-  text-align: center;
+header #logo img {
+	height: 5vmin;
 }
 
-h2 {
-  border: 1px dotted red;
-  color: red;
-  font-size: 14px;
-  line-height: 48px;
-  padding: 20px 30px;
-  margin: 30px 20px;
-  text-align: center;
+#header-image {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(0%);
+	background-image: url(pictures/luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: fixed;
+	left: 1vmax;
+	right: 1vmax;
 }
 
-h3 {
-  color: red;
-  font-size: 26px;
-  font-weight: 700;
-  padding: 20px 10px;
-}
-
-p {
-  color: grey;
-  font-size: 16px;
-  line-height: 48px;
-  margin-top: 60px;
-  padding: 10px 20px;
-}
-
-.pull-quote {
-  margin: 0 auto;
-  width: 400px;
-}
-
-.byline {
-  border-bottom: 1px solid LightGrey;
-  border-top: 1px solid LightGrey;
-  color: DarkGrey;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-.share {
-  border: 1px solid LightGrey;
-  padding: 40px 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.share a {
-  background: red;
-  border: 1px solid red;
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  padding: 14px;
-  text-decoration: none;
-}
-
-.share a:hover {
-  background: white;
-  border: 1px solid red;
-  color: red;
+.header-text {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	color: white;
+	text-align: center;
+	font-family: "Open Sans", sans-serif;
 }
