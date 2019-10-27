@@ -1,2 +1,2 @@
-# projects
+# portfolio page
 Read me :D
