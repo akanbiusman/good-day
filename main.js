@@ -13,7 +13,7 @@ setInterval(function randomBackground() {
   var b = Math.floor(Math.random() * 256);
   var c = Math.floor(Math.random() * 256);
 
-  var bgcolor = "rgb(" + a + ", " + b + ", " + c + ")";
+  var bgcolor = "linear-gradient(to bottom right," + a + ", " + b + ", " + c + ")";
 
   document.body.style.background = bgcolor;
 }, 1500);
