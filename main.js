@@ -1,4 +1,5 @@
 var body = document.getElementById("body");
+var div = document.querySelector(".div");
 var p = document.querySelector("p");
 var h = document.querySelector("h1");
 const date = new Date();
@@ -13,9 +14,14 @@ setInterval(function randomBackground() {
   var b = Math.floor(Math.random() * 256);
   var c = Math.floor(Math.random() * 256);
 
-  var bgcolor = "rgb(" + a + ", " + b + ", " + c + ")";
+  var s = Math.floor(Math.random() * 200);
+  var d = Math.floor(Math.random() * 200);
+  var f = Math.floor(Math.random() * 200);
 
+  var bgcolor = "rgb(" + a + ", " + b + ", " + c + ")";
+  var bgcolor2 = "rgb(" + s + ", " + d + ", " + f + ")";
   document.body.style.background = bgcolor;
+  div.style.background = bgcolor2;
 }, 1500);
 
 function setDay() {
