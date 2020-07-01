@@ -21,7 +21,7 @@ setInterval(function randomBackground() {
   var bgcolor = "rgb(" + a + ", " + b + ", " + c + ")";
   var bgcolor2 = "rgb(" + s + ", " + d + ", " + f + ")";
   document.body.style.background = bgcolor;
-  div.style.background = bgcolor2;
+  div.style.background = bgcolor2
 }, 1500);
 
 function setDay() {
